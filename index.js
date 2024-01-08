@@ -2,10 +2,10 @@ const express = require("express")
 const cookieParser = require('cookie-parser')
 require('dotenv').config()
 
-const { connectToMongoDB } = require("./connect")
-const urlRoute = require("./routes/url")
+const { connectToMongoDB } = require("./connect.js")
+const urlRoute = require("./routes/url.js")
 const userRoutes = require("./routes/user.js")
-const URL = require("./models/url")
+const URL = require("./models/url.js")
 
 const app = express()
 
