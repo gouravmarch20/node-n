@@ -14,9 +14,9 @@ const cors = require("cors")
 // connectToMongoDB("mongodb://localhost:27017/short-url").then(() =>
 //   console.log("Mongodb connected")
 // )
-// connectToMongoDB(process.env.MONGO_DB).then(() =>
-//   console.log("Mongodb connected")
-// )
+connectToMongoDB(process.env.MONGO_DB).then(() =>
+  console.log("Mongodb connected")
+)
 var corsOptions = {
   origin: "*",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
