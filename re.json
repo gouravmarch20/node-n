@@ -1,0 +1,30 @@
+{
+    "name": "short-url",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "develop": "concurrently \"react-scripts start\" \" nodemon index.js\"",
+      "start": "concurrently \"react-scripts start\" \" node index.js\"",
+      "build": "CI=false react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "seeds": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "concurrently": "^8.2.2",
+      "cookie-parser": "^1.4.6",
+      "cors": "^2.8.5",
+      "dotenv": "^16.3.1",
+      "express": "^4.18.2",
+      "jsonwebtoken": "^9.0.1",
+      "mongoose": "^6.9.0",
+      "nanoid": "^4.0.0",
+      "nodemon": "^2.0.20",
+      "shortid": "^2.2.16"
+    }
+  }
+  

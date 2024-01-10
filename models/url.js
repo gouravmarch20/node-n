@@ -11,6 +11,12 @@ const urlSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    emailM: {
+      type: String,
+    },
+    username: {
+      type: String,
+    },
     visitHistory: [{ timestamp: { type: Number } }],
   },
   { timestamps: true }
